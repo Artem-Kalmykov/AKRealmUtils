@@ -1,0 +1,6 @@
+framework module AKRealmUtils {
+  umbrella header "AKRealmUtils-umbrella.h"
+
+  export *
+  module * { export * }
+}
