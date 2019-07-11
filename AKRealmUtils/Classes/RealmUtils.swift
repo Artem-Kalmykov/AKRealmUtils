@@ -30,6 +30,12 @@ extension Realm {
         }
     }()
     
+    public static func encrypt(withKey key: Data) {
+        let config = Realm.Configuration(encryptionKey: key)
+    }
+    
+//    private static var encryptionKey:
+    
     public class var shared: Realm {
         return self.sharedRealm
     }
@@ -74,11 +80,11 @@ extension Realm {
 }
 
 extension Object {
-    public func addToRealm(update: Bool = true) {
+    @objc public func addToRealm(update: Bool = true) {
         Realm.shared.add(self, update: update)
     }
     
-    public func deleteFromRealm() {
+    @objc public func deleteFromRealm() {
         Realm.shared.delete(self)
     }
     
