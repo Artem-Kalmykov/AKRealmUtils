@@ -31,7 +31,7 @@ extension Realm {
     }()
     
     public static func encrypt(withKey key: Data) {
-        let config = Realm.Configuration(encryptionKey: key)
+//        let config = Realm.Configuration(encryptionKey: key)
     }
     
 //    private static var encryptionKey:
@@ -80,7 +80,7 @@ extension Realm {
 }
 
 extension Object {
-    @objc public func addToRealm(update: Bool = true) {
+    public func addToRealm(update: Realm.UpdatePolicy = .error) {
         Realm.shared.add(self, update: update)
     }
     

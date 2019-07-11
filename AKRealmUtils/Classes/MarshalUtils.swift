@@ -10,11 +10,11 @@ import Marshal
 import RealmSwift
 
 extension Dictionary: ValueType {
-    public static func value(from object: Any) throws -> Dictionary {
-        guard let dict = object as? Dictionary else {
+    public static func value(from object: Any) throws -> Value {
+        guard let dict = object as? Value else {
             throw MarshalError.typeMismatch(expected: String.self, actual: type(of: object))
         }
-        
+
         return dict
     }
 }
