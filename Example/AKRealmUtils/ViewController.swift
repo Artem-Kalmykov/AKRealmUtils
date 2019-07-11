@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import RealmSwift
+import AKRealmUtils
 
 class ViewController: UIViewController {
 
@@ -22,3 +24,8 @@ class ViewController: UIViewController {
 
 }
 
+class CustomObject: Object {
+    override func deleteFromRealm() {
+        super.deleteFromRealm()
+    }
+}

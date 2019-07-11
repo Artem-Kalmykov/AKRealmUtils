@@ -84,7 +84,7 @@ extension Object {
         Realm.shared.add(self, update: update)
     }
     
-    @objc public func deleteFromRealm() {
+    @objc open func deleteFromRealm() {
         Realm.shared.delete(self)
     }
     
