@@ -1,14 +1,14 @@
 PODS:
-  - AKRealmUtils (1.0.0):
+  - AKRealmUtils (1.0.1):
     - Marshal
     - Realm
     - RealmSwift
   - Marshal (1.2.7)
-  - Realm (3.10.0):
-    - Realm/Headers (= 3.10.0)
-  - Realm/Headers (3.10.0)
-  - RealmSwift (3.10.0):
-    - Realm (= 3.10.0)
+  - Realm (3.17.1):
+    - Realm/Headers (= 3.17.1)
+  - Realm/Headers (3.17.1)
+  - RealmSwift (3.17.1):
+    - Realm (= 3.17.1)
 
 DEPENDENCIES:
   - AKRealmUtils (from `../`)
@@ -24,11 +24,11 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  AKRealmUtils: 4a3f9bec6bf1ad3b1436b0e694f71ea76852c04f
+  AKRealmUtils: 4baf51e1a3b1fec4f1ebebefc1dd22b98a42f7a7
   Marshal: ef480864a6af10a63f67be7e55bb5d8fe67a16d9
-  Realm: 85ab9e4f779d66f6e9ffeb118dc25b7f130c96ac
-  RealmSwift: 69121c8b86d0ae005fb779efdb10e606732e1c74
+  Realm: c204f1a890f07dea43b14132a6aad118c054b8f2
+  RealmSwift: 4d3c9233544b9cd08a8913e0872b9038eb99b054
 
 PODFILE CHECKSUM: 259f40d053344c560e78a4a2d720bd5b171ebb00
 
-COCOAPODS: 1.6.0.beta.1
+COCOAPODS: 1.7.3
