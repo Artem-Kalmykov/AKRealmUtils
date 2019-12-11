@@ -22,9 +22,6 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages which this package depends on.
         .target(
             name: "AKRealmUtils",
-            dependencies: []),
-        .testTarget(
-            name: "AKRealmUtilsTests",
-            dependencies: ["AKRealmUtils"]),
+            dependencies: ["RealmSwift"])
     ]
 )
