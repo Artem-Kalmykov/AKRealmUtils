@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = 'AKRealmUtils'
-  s.version          = '1.0.2'
-  s.summary          = 'Realm and Marshal tools'
+  s.version          = '1.0.3'
+  s.summary          = 'Realm tools'
 
   s.description      = <<-DESC
 This library simplifies workflow with Realm and provides some helper methods for mapping via Marshal
@@ -19,5 +19,4 @@ This library simplifies workflow with Realm and provides some helper methods for
 
   s.dependency 'Realm'
   s.dependency 'RealmSwift'
-  s.dependency 'Marshal'
 end
